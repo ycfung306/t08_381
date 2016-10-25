@@ -7,7 +7,7 @@ app.use('/',express.static('public'));
 
 // '/index.html' -> './public/index.html'
 app.get('/index.html', function(req,res) {
-  res.sendFile('/index.html');
+  res.sendFile(__dirname + '/public/welcome.html');
 });
 
 app.get('/', function(req,res) {
