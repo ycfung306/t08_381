@@ -5,7 +5,7 @@ var app = express();
 // Define virtual path '/' that links to ./public
 app.use('/',express.static('public'));
 
-// '/index.html' -> './public/index.html'
+// '/index.html' -> './public/welcome.html'
 app.get('/index.html', function(req,res) {
   res.sendFile(__dirname + '/public/welcome.html');
 });
