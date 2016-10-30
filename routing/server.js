@@ -5,8 +5,8 @@ var app = express();
 // Define virtual path '/' that links to ./public
 app.use('/',express.static('public'));
 //Task 3
-app.use('/',express.static('2016'));
-app.use('/',express.static('2017'));
+app.use('/2016',express.static('photos.2016'));
+app.use('/2017',express.static('photos.2017'));
 
 // '/index.html' -> './public/welcome.html'
 app.get('/index.html', function(req,res) {
